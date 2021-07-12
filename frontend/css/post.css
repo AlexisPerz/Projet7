@@ -1,0 +1,139 @@
+#publier{
+    margin: 10px;
+    width: 150px;
+    background-color: #05055c;
+    border: #05055c;
+}
+
+#publier:hover{
+    border: #0d0d81;
+    background-color: #0d0d81;
+}
+
+#commenter{
+    background-color: #05055c;
+    border: #05055c;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+#commenter:hover{
+    border: #0d0d81;
+    background-color: #0d0d81;
+}
+
+#container{
+    width: calc(100% - 15%);
+    margin-left: calc(15% + 15px);
+    overflow-y: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    width: 100px;
+    position: fixed;
+}
+
+#imagefield{
+    display: none;
+}
+
+#image{
+    background-color: #05055c;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6.5px 15px;
+    color: white;
+    margin: 10px;
+}
+
+#image:hover{
+    border: #0d0d81;
+    background-color: #0d0d81;
+}
+
+#bouton-modifier{
+    background-color: #05055c;
+    border: #05055c;
+}
+
+#bouton-modifier:hover{
+    background-color: #0d0d81;
+    border: #0d0d81;
+}
+
+.fa-trash-alt{
+    background-color: #05055c;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fa-trash-alt:hover{
+    background-color: #0d0d81;
+}
+
+.fa-pencil-alt{
+    background-color: #05055c;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fa-pencil-alt:hover{
+    background-color: #0d0d81;
+}
+
+
+#left{
+    background-color: #05055c;
+    width: 15%;
+    text-align: center;
+    min-height: 100vh;
+    position: fixed;
+}
+
+#deconnexion{
+    border-radius: 0px;
+    border: #05055c;
+    background-color: #05055c;
+}
+
+#deconnexion:hover{
+    border: #0d0d81;
+    background-color: #0d0d81;
+}
+
+.publication{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 90%;
+}
+
+.article .disable{
+    display: none;
+}
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+#cardpost{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
