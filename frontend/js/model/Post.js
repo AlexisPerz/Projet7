@@ -30,7 +30,9 @@ class Post{
                     <textarea class="form-control" name="message" placeholder="Écrivez un commentaire..." required></textarea>
                 </div>
             </div>
-            <button id="commenter" class="btn btn-primary" type="submit">Répondre</button>
+            <div>
+                <button id="commenter" class="btn btn-primary" type="submit">Répondre</button>
+            </div>
         </div>`
     }
 

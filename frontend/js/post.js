@@ -76,6 +76,26 @@ document.querySelector("#publier").addEventListener("click", function(e){
     }
 })
 
+document.querySelector("#commenter").addEventListener("click", function(e){
+    e.preventDefault();
+    if(document.querySelector("#cardpost textarea").reportValidity()){
+        let data = new FormData();
+        data.append("message", document.querySelector('#cardpost [name="message"]').value);
+        fetch("http://localhost:3000/api/comment", {
+            method: "POST",
+            headers: {
+                Authorization: `Bearer ${token}`
+            },
+            body: data
+        })
+        .then(async result => fetchData(result))
+        .then(data => {
+            window.location.reload();
+        })
+        .catch(error => console.log(error));
+    }
+})
+
 document.querySelector("#deconnexion").addEventListener("click", function(){
     localStorage.removeItem("user");
     window.location.assign("login.html");

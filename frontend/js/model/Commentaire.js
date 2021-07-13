@@ -19,6 +19,8 @@ class Commentaire{
                 <p class="card-text">${ this.message }</p>
                 <i class="fas fa-trash-alt"></i>
             </div>
+            <div>
+                <button id="commenter" class="btn btn-primary" type="submit">Répondre</button>
             </div>
         </div>`
     }
