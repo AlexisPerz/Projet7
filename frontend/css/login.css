@@ -50,3 +50,13 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+#bouton{
+  background-color: #05055c;
+  border: #05055c;
+}
+
+#bouton:hover{
+  border: #0d0d81;
+  background-color: #0d0d81;
+}

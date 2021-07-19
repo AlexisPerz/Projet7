@@ -2,6 +2,12 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const Comment = require('../models/comments');
 
+/**
+ * Permet de creer un nouveau commentaire associer a un post 
+ * @param {Request} req Requete recu par le serveur
+ * @param {Response} res 
+ * @param {function} next 
+ */
 exports.createComments = (req, res, next) => {
     let commentsObject = (req.body.comments);
     delete commentsObject._id;

@@ -41,3 +41,17 @@ exports.login = (req, res, next) => {
       })
       .catch(error => res.status(500).json({ error }));
   };
+
+exports.delete = (req, res, next) => {
+  User.findOne({
+    where : {
+      id : req.token.userId
+    }
+  })
+  .then((user) => {
+    user.destroy();
+    res.status(200).json({ message: 'Profil supprimé !' })
+  })
+  .catch(error => 
+    res.status(400).json({ error }));
+}

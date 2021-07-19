@@ -15,7 +15,8 @@
     <aside id="left">
         <img class="logo" src="/frontend/Logos/icon-left-font-monochrome-white.png" alt="Logo Groupomania">
         <div class="nav flex-column" id="navbar" role="tablist" aria-orientation="vertical">
-            <button class="btn btn-primary" id="deconnexion" type="submit"><i class="fas fa-power-off"></i></button>
+            <button class="btn btn-primary" id="profil" data-toggle="modal" data-target="#profil-modal"><i class="fas fa-user"></i> Profil</button>
+            <button class="btn btn-primary" id="deconnexion"><i class="fas fa-power-off"></i> Déconnexion</button>
         </div>
     </aside>
     <div id="container">
@@ -57,6 +58,25 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" id="bouton-modifier" class="btn btn-primary">Modifier</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="profil-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Supprimer votre profil</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <input id="modifierId" type="hidden">
+                        <p>Attention ! Voulez-vous supprimer votre profil ?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" id="bouton-supprimer" class="btn btn-primary">Supprimer</button>
                     </div>
                   </div>
                 </div>

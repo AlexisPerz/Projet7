@@ -1,3 +1,9 @@
+#centermain{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
 #publier{
     margin: 10px;
     width: 150px;
@@ -15,6 +21,7 @@
     border: #05055c;
     width: 150px;
     margin: 10px;
+    margin-left: 175px;
     text-align: center;
 }
 
@@ -67,6 +74,16 @@ header{
     border: #0d0d81;
 }
 
+#bouton-supprimer{
+    background-color: #a30000;
+    border: #a30000;
+}
+
+#bouton-supprimer:hover{
+    background-color: #da1919;
+    border: #da1919;
+}
+
 .fa-trash-alt{
     background-color: #05055c;
     border-radius: 5px;
@@ -113,6 +130,17 @@ header{
     background-color: #0d0d81;
 }
 
+#profil{
+    border-radius: 0px;
+    border: #05055c;
+    background-color: #05055c;
+}
+
+#profil:hover{
+    border: #0d0d81;
+    background-color: #0d0d81;
+}
+
 .publication{
     display: flex;
     flex-direction: row;
@@ -127,13 +155,12 @@ header{
 }
 
 .card-img-top{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 15px;
 }
 
 #cardpost{
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 500px;
 }

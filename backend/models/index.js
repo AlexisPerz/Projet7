@@ -4,13 +4,23 @@ const Comment = require('./comments');
 
 exports.load=async()=>{
 
-    Post.belongsTo(User);
-    Post.hasMany(Comment);
-    Comment.belongsTo(User);
+    Post.belongsTo(User, {
+        onDelete: "cascade"
+    });
+    Post.hasMany(Comment, {
+        onDelete: "cascade"
+    });
+    Comment.belongsTo(User, {
+        onDelete: "cascade"
+    });
     
     await User.sync({
         alter:true
     });
-    await Post.sync();  
-    await Comment.sync();
+    await Post.sync({
+        alter:true
+    });  
+    await Comment.sync({
+        alter:true
+    });
 }
